@@ -21,7 +21,6 @@ class BannerCard extends StatelessWidget {
                 highlightColor: Colors.white,
                 baseColor: Colors.grey.shade300,
                 child: Container(
-                  margin: const EdgeInsets.all(10),
                   decoration: const BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.all(Radius.circular(10))
