@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:my_grocery/component/main_header.dart';
 import 'package:my_grocery/controller/controllers.dart';
 import 'package:my_grocery/view/home/components/popular_category/popular_category.dart';
+import 'package:my_grocery/view/home/components/popular_product/popular_product_loading.dart';
 import 'package:my_grocery/view/home/components/section_title.dart';
 
 import 'components/carousel_slider/carousel_slider_view.dart';
@@ -16,26 +17,46 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Column(
-      children: [
-        const MainHeader(),
-        Obx(() {
-          if (homeController.bannerList.isNotEmpty) {
-            return CarouselSliderView(bannerList: homeController.bannerList);
-          } else {
-            return const CarouselLoading();
-          }
-        }),
-        const SectionTitle(title: "Popular Category"),
-        Obx(() {
-          if (homeController.popularCategoryList.isNotEmpty) {
-            return PopularCategory(
-                categories: homeController.popularCategoryList
-            );
-          } else {
-            return const PopularCategoryLoading();
-          }
-        }),
-      ],
-    ));
+          children: [
+            const MainHeader(),
+            Expanded(
+              child: SingleChildScrollView(
+                physics: const BouncingScrollPhysics(),
+                child: Column(
+                  children: [
+                    Obx(() {
+                      if (homeController.bannerList.isNotEmpty) {
+                        return CarouselSliderView(bannerList: homeController.bannerList);
+                      } else {
+                        return const CarouselLoading();
+                      }
+                    }),
+                    const SectionTitle(title: "Popular Category"),
+                    Obx(() {
+                      if (homeController.popularCategoryList.isNotEmpty) {
+                        return PopularCategory(
+                            categories: homeController.popularCategoryList
+                        );
+                      } else {
+                        return const PopularCategoryLoading();
+                      }
+                    }),
+                    const SectionTitle(title: "Popular Product"),
+                    Obx(() {
+                      if (homeController.popularProductList.isNotEmpty) {
+                        return PopularProductLoading();
+                      } else {
+                        return const PopularProductLoading();
+                      }
+                    }),
+                  ],
+                ),
+              ),
+            )
+          ],
+        ));
   }
 }
+
+
+

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_grocery/model/category.dart';
-import 'package:my_grocery/view/home/components/popular_category/popular_category_card.dart';
+
+import 'popular_category_card.dart';
 
 class PopularCategory extends StatelessWidget {
   final List<Category> categories;
