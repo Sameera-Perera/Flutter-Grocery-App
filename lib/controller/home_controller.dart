@@ -69,7 +69,6 @@ class HomeController extends GetxController {
             popularCategories: popularCategoryListFromJson(result.body));
       }
     } finally {
-      print(popularCategoryList.length);
       isPopularCategoryLoading(false);
     }
   }
@@ -87,7 +86,6 @@ class HomeController extends GetxController {
             popularProducts: popularProductListFromJson(result.body));
       }
     } finally {
-      print(popularProductList.length);
       isPopularProductLoading(false);
     }
   }
