@@ -26,6 +26,19 @@ To get a local copy up and running follow these simple example steps.
    flutter pub getFlutter-Grocery-App
    ```
 
+## Tutorial Playlist
+1. [Flutter E-commerce App With REST API - Part 01 - Setup Strapi REST API](https://youtu.be/TxVK2c3vJ0Y)
+2. [Flutter E-commerce App With REST API - Part 02 - Setup Flutter Project And Bottom Navigation Bar](https://youtu.be/upg71WsUOfs)
+3. [Flutter E-commerce App With REST API - Part 03 - Home Header/Search Field Design](https://youtu.be/0Oyt3Kh1nr0)
+4. [Flutter E-commerce App With REST API - Part 04 - Home Carousel Slider #1](https://youtu.be/sQS_DAmQh2Y)
+5. [Flutter E-commerce App With REST API - Part 05 -  Home Carousel Slider #2](https://youtu.be/lB4kf1zEKlU)
+6. [Flutter E-commerce App With REST API - Part 06 - Popular Category#1](https://youtu.be/2nR4DuGcZGo)
+7. [Flutter E-commerce App With REST API - Part 07 -  Popular Category#2](https://youtu.be/TFkJK8AEIRo)
+8. [Flutter E-commerce App With REST API - Part 08 - Popular Product#1](https://youtu.be/ftgUbCOlGfc)
+9. [Flutter E-commerce App With REST API - Part 09 - Popular Product#2](https://youtu.be/wv-q6_cjaQA)
+10. [Flutter E-commerce App With REST API - Part 10 - Hive Local Storage](https://youtu.be/upaVsWpYmns)
+11. [Flutter E-commerce App With REST API - Part 11 - Fetch Products#1](https://youtu.be/SlqLlIbasRU)
+12. [Flutter E-commerce App With REST API - Part 12 - Fetch Products#2](https://youtu.be/hNH7nzMezjc)
 
 <!-- LICENSE -->
 ## License
