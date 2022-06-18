@@ -39,6 +39,7 @@ To get a local copy up and running follow these simple example steps.
 10. [Flutter E-commerce App With REST API - Part 10 - Hive Local Storage](https://youtu.be/upaVsWpYmns)
 11. [Flutter E-commerce App With REST API - Part 11 - Fetch Products#1](https://youtu.be/SlqLlIbasRU)
 12. [Flutter E-commerce App With REST API - Part 12 - Fetch Products#2](https://youtu.be/hNH7nzMezjc)
+13. [Flutter E-commerce App With REST API - Part 13 - Product Details](https://youtu.be/iQKqU0__o1o)
 
 <!-- LICENSE -->
 ## License
