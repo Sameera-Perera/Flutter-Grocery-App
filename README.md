@@ -57,4 +57,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-url]: https://github.com/Sameera-Perera/Flutter-Grocery-App/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: http://www.linkedin.com/in/sameera-perera-1148081b8
-[product-screenshot]: screenshots/screenshot-01.png
+[product-screenshot]: screenshots/Preview.png
