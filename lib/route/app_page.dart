@@ -9,6 +9,6 @@ class AppPage {
         name: AppRoute.dashboard,
         page: () => const DashboardScreen(),
         binding: DashboardBinding()
-    )
+    ),
   ];
 }
