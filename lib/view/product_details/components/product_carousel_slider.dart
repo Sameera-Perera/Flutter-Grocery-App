@@ -25,24 +25,27 @@ class _ProductCarouselSliderState extends State<ProductCarouselSlider> {
               items: widget.images
                   .map((e) => Container(
                         color: Colors.white,
-                        child: CachedNetworkImage(
-                          imageUrl: baseUrl + e,
-                          imageBuilder: (context, imageProvider) => Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                image: DecorationImage(image: imageProvider)),
-                          ),
-                          placeholder: (context, url) => Shimmer.fromColors(
-                            highlightColor: Colors.white,
-                            baseColor: Colors.grey.shade300,
-                            child: Container(
-                              color: Colors.grey.shade300,
+                        child: Hero(
+                          tag: e,
+                          child: CachedNetworkImage(
+                            imageUrl: baseUrl + e,
+                            imageBuilder: (context, imageProvider) => Container(
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  image: DecorationImage(image: imageProvider)),
                             ),
-                          ),
-                          errorWidget: (context, url, error) => const Center(
-                            child: Icon(
-                              Icons.error_outline,
-                              color: Colors.grey,
+                            placeholder: (context, url) => Shimmer.fromColors(
+                              highlightColor: Colors.white,
+                              baseColor: Colors.grey.shade300,
+                              child: Container(
+                                color: Colors.grey.shade300,
+                              ),
+                            ),
+                            errorWidget: (context, url, error) => const Center(
+                              child: Icon(
+                                Icons.error_outline,
+                                color: Colors.grey,
+                              ),
                             ),
                           ),
                         ),
