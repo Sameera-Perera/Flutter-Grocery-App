@@ -39,6 +39,7 @@ To get a local copy up and running follow these simple example steps.
 10. [Flutter E-commerce App With REST API - Part 10 - Hive Local Storage](https://youtu.be/upaVsWpYmns)
 11. [Flutter E-commerce App With REST API - Part 11 - Fetch Products#1](https://youtu.be/SlqLlIbasRU)
 12. [Flutter E-commerce App With REST API - Part 12 - Fetch Products#2](https://youtu.be/hNH7nzMezjc)
+13. [Flutter E-commerce App With REST API - Part 13 - Product Details](https://youtu.be/iQKqU0__o1o)
 
 <!-- LICENSE -->
 ## License
@@ -57,4 +58,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-url]: https://github.com/Sameera-Perera/Flutter-Grocery-App/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: http://www.linkedin.com/in/sameera-perera-1148081b8
-[product-screenshot]: screenshots/screenshot-01.png
+[product-screenshot]: screenshots/Preview.png
