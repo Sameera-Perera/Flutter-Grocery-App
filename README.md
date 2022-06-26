@@ -40,6 +40,7 @@ To get a local copy up and running follow these simple example steps.
 11. [Flutter E-commerce App With REST API - Part 11 - Fetch Products#1](https://youtu.be/SlqLlIbasRU)
 12. [Flutter E-commerce App With REST API - Part 12 - Fetch Products#2](https://youtu.be/hNH7nzMezjc)
 13. [Flutter E-commerce App With REST API - Part 13 - Product Details](https://youtu.be/iQKqU0__o1o)
+14. [Flutter E-commerce App With REST API - Part 14 - Product Search](https://youtu.be/Zm6rLOwyW_4)
 
 <!-- LICENSE -->
 ## License
