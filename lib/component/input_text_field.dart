@@ -77,6 +77,7 @@ class _InputTextFieldState extends State<InputTextField> {
         style:
         const TextStyle(fontSize: 12.0, height: 2.0, color: Colors.black),
         textAlign: widget.textAlign,
+        autovalidateMode: AutovalidateMode.onUserInteraction,
         decoration: InputDecoration(
             hintText: widget.hint,
             labelText: widget.title,

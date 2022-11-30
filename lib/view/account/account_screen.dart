@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:my_grocery/controller/controllers.dart';
 
 import 'auth/sign_in_screen.dart';
 
@@ -13,7 +15,7 @@ class AccountScreen extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           const SizedBox(height: 20),
-          Row(
+          Obx(()=> Row(
             children: [
               const CircleAvatar(
                 backgroundColor: Colors.grey,
@@ -25,15 +27,15 @@ class AccountScreen extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               Column(
-                children: const [
+                children:  [
                   Text(
-                    "Sign in your account",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                    authController.user.value?.fullName??"Sign in your account",
+                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                   )
                 ],
               )
             ],
-          ),
+          ),),
           const SizedBox(height: 50),
           buildAccountCard(
               title: "Profile Info",
@@ -47,7 +49,17 @@ class AccountScreen extends StatelessWidget {
           buildAccountCard(title: "Settings", onClick: () {}),
           buildAccountCard(title: "About Us", onClick: () {}),
           buildAccountCard(title: "Terms of Service", onClick: () {}),
-          buildAccountCard(title: "Sign In", onClick: () {})
+          Obx(() => buildAccountCard(title: authController.user.value==null?"Sign In":
+              "Sign Out", onClick: () {
+            if(authController.user.value!=null){
+              authController.signOut();
+            } else {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const SignInScreen()));
+            }
+          }))
         ],
       ),
     );
