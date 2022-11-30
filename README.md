@@ -43,6 +43,8 @@ To get a local copy up and running follow these simple example steps.
 14. [Flutter E-commerce App With REST API - Part 14 - Product Search](https://youtu.be/Zm6rLOwyW_4)
 15. [Flutter E-commerce App With REST API - Part 15 - Category](https://youtu.be/kNjWr0GpQ9A)
 16. [Flutter E-commerce App With REST API - Part 16 - Authentication UI Design](https://youtu.be/f6rcsM6UHYo)
+17. [Flutter E-commerce App With REST API - Part 17 - JWT Authentication - Strapi 4 Custom User Profile](https://youtu.be/gPFbxwRGhiQ)
+18. [Flutter E-commerce App With REST API - Part 18 - Form Validation, JWT Authentication Complete](https://youtu.be/rxdube0FcLM)
 
 <!-- LICENSE -->
 ## License
