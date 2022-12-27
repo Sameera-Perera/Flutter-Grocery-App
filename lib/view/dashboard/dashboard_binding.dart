@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:my_grocery/controller/auth_controller.dart';
+import 'package:my_grocery/controller/cart_controller.dart';
 import 'package:my_grocery/controller/category_controller.dart';
 import 'package:my_grocery/controller/dashboard_controller.dart';
 import 'package:my_grocery/controller/home_controller.dart';
@@ -13,5 +14,6 @@ class DashboardBinding extends Bindings {
     Get.put(ProductController());
     Get.put(CategoryController());
     Get.put(AuthController());
+    Get.put(CartController());
   }
 }

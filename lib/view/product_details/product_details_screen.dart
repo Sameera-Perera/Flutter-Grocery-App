@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+import '../../controller/controllers.dart';
 import '../../model/product.dart';
+import '../account/auth/sign_in_screen.dart';
 import 'components/product_carousel_slider.dart';
 
 class ProductDetailsScreen extends StatefulWidget {
@@ -167,10 +169,26 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
         child: TextButton(
           style: ButtonStyle(
             foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-            backgroundColor:
-                MaterialStateProperty.all<Color>(Theme.of(context).primaryColor),
+            backgroundColor: MaterialStateProperty.all<Color>(
+                Theme.of(context).primaryColor),
           ),
-          onPressed: () {},
+          onPressed: () {
+            try {
+              if (authController.user.value != null) {
+                cartController.addCart(
+                    tag: widget.product.tags[_tagIndex],
+                    quantity: _qty,
+                    product: widget.product,
+                    token: authController.getToken()!);
+                Navigator.of(context).pop();
+              } else {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SignInScreen()));
+              }
+            } finally {}
+          },
           child: const Padding(
             padding: EdgeInsets.all(6.0),
             child: Text(

@@ -44,7 +44,8 @@ class AccountScreen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => const SignInScreen()));
-              }),
+              },
+          ),
           buildAccountCard(title: "Notification", onClick: () {}),
           buildAccountCard(title: "Settings", onClick: () {}),
           buildAccountCard(title: "About Us", onClick: () {}),

@@ -24,7 +24,7 @@ class AppTheme {
   );
 
   static Brightness get currentSystemBrightness =>
-      SchedulerBinding.instance!.window.platformBrightness;
+      SchedulerBinding.instance.window.platformBrightness;
 
   static setStatusBarAndNavigationBarColors(ThemeMode themeMode) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
